@@ -1,10 +1,18 @@
+import { BrowserRouter, Route, Routes } from "react-router";
 import "./App.css";
+import Home from "./pages/Home";
+import Signin from "./pages/auth/Signin";
+import Signup from "./pages/auth/Signup";
 
 function App() {
   return (
-    <div className="text-xl font-semibold text-red-400 text-center underline">
-      asdfasd
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sign-in" element={<Signin />} />
+        <Route path="/sign-up" element={<Signup />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
