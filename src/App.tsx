@@ -11,6 +11,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/test" element={<Signup />} />
         <Route path="*" element={<Signin />} /> {/* fallback */}
       </Routes>
     </BrowserRouter>
